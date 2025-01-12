@@ -1,5 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Laravel Project</title>
+</head>
 <body>
-    <p>hello</p>
+    <h1>Welcome to My Laravel Project</h1>
+
+    <p>
+        Today's date is: {{ date('Y-m-d') }}
+    </p>
+
+    <p>
+        User: {{ $username ?? 'Guest' }}
+    </p>
 </body>
 </html>
