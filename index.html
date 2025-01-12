@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script>
-        window.location.href = "{{ url('home') }}"; // استخدم مسار الصفحة المطلوبة
-    </script>
+    document.addEventListener('DOMContentLoaded', function() {
+        window.location.href = "{{ url('home') }}";
+    });
+</script>
 </head>
 <body>
     <h1>Redirecting you to the Blade page...</h1>
