@@ -2,18 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Laravel Project</title>
+    <title>Redirecting...</title>
+    <script>
+        window.location.href = "{{ url('/home.blade.php') }}"; // استخدم مسار الصفحة المطلوبة
+    </script>
 </head>
 <body>
-    <h1>Welcome to My Laravel Project</h1>
-
-    <p>
-        Today's date is: {{ date('Y-m-d') }}
-    </p>
-
-    <p>
-        User: {{ $username ?? 'Guest' }}
-    </p>
+    <h1>Redirecting you to the Blade page...</h1>
+    <p>If you are not redirected automatically, follow this <a href="{{ url('/your-blade-route') }}">link</a>.</p>
 </body>
 </html>
